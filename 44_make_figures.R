@@ -17,21 +17,21 @@ make_fig <- function(files, ncol, out, w, h) {
   ggsave(out, fig, width = w, height = h, dpi = 300)
 }
 
-make_fig(c("results/PCA_UC_v2.png", "results/PCA_CD_v2.png",
-           "results/volcano_UC_v2.png", "results/volcano_CD_v2.png"),
+make_fig(c("results/intermediate/PCA_UC_v2.png", "results/intermediate/PCA_CD_v2.png",
+           "results/intermediate/volcano_UC_v2.png", "results/intermediate/volcano_CD_v2.png"),
          2, "results/figures/Figure2_PCA_volcano.png", 14, 12)
-make_fig(c("results/Venn_UC_CD_v2.png", "results/heatmap_UC_v2.png", "results/heatmap_CD_v2.png"),
+make_fig(c("results/intermediate/Venn_UC_CD_v2.png", "results/intermediate/heatmap_UC_v2.png", "results/intermediate/heatmap_CD_v2.png"),
          3, "results/figures/Figure3_Venn_heatmaps.png", 16, 6.5)
-make_fig(c("results/GO_BP_dotplot.png", "results/KEGG_dotplot.png"),
+make_fig(c("results/intermediate/GO_BP_dotplot.png", "results/intermediate/KEGG_dotplot.png"),
          2, "results/figures/Figure4_GO_KEGG.png", 16, 7)
-make_fig("results/PPI_network_hubs.png",
+make_fig("results/intermediate/PPI_network_hubs.png",
          1, "results/figures/Figure5_PPI_hubs.png", 9, 7.5)
-make_fig(c("results/validation_boxplot_v2.png", "results/validation_ROC_v2.png",
-           "results/validation_boxplot_CD_v2.png", "results/validation_ROC_CD_v2.png"),
+make_fig(c("results/intermediate/validation_boxplot_v2.png", "results/intermediate/validation_ROC_v2.png",
+           "results/intermediate/validation_boxplot_CD_v2.png", "results/intermediate/validation_ROC_CD_v2.png"),
          2, "results/figures/Figure6_validation.png", 16, 12)
-make_fig(c("results/xcell_heatmap.png", "results/hub_immune_corr.png"),
+make_fig(c("results/intermediate/xcell_heatmap.png", "results/intermediate/hub_immune_corr.png"),
          2, "results/figures/Figure7_immune.png", 16, 7)
-make_fig(c("results/GO_BP_UC_specific.png", "results/GO_BP_CD_specific.png"),
+make_fig(c("results/intermediate/GO_BP_UC_specific.png", "results/intermediate/GO_BP_CD_specific.png"),
          2, "results/figures/Figure8_specific_GO.png", 16, 7)
-make_fig(c("results/hub_immune_corr_UC.png", "results/hub_immune_corr_CD.png"),
+make_fig(c("results/intermediate/hub_immune_corr_UC.png", "results/intermediate/hub_immune_corr_CD.png"),
          2, "results/figures/FigureS1_within_group_corr.png", 16, 6)
