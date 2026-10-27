@@ -12,7 +12,7 @@ R scripts for an in silico differential expression analysis of ulcerative coliti
 - Drug-gene links: DGIdb (hypotheses only)
 
 ## Usage
-Run the scripts in numerical order (01 to 44). Raw data are not included; download them from GEO using the accession numbers above.
+Run the scripts in numerical order (01 to 50). Scripts 45-50 contain the robustness analyses (sensitivity of hub selection, alternative centrality measures, resampling stability), the PTGS2 supplementary validation and the colonic Crohn's disease validation (GSE20881). Summary tables are in the `results` folder.
 
 ## Software
 R with limma, clusterProfiler, igraph, pROC, xCell, ggplot2 and patchwork. See the Methods section of the article for versions.
