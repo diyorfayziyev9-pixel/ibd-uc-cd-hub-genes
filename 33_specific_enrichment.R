@@ -10,7 +10,7 @@ run_enrich <- function(genes, name) {
                  ont = "BP", pAdjustMethod = "BH", pvalueCutoff = 0.05,
                  qvalueCutoff = 0.05, readable = TRUE)
   write.csv(as.data.frame(go), paste0("results/GO_BP_", name, ".csv"), row.names = FALSE)
-  p <- dotplot(go, showCategory = 12) + ggtitle(paste("GO BP:", name))
+  p <- dotplot(go, showCategory = 12) + ggtitle(paste("GO BP:", gsub("_", "-", name)))
   ggsave(paste0("results/GO_BP_", name, ".png"), p, width = 9, height = 7, dpi = 300)
   print(head(as.data.frame(go)[, c("Description", "Count", "p.adjust")], 8))
 }
