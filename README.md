@@ -12,10 +12,15 @@ R scripts for an in silico differential expression analysis of ulcerative coliti
 - Immune context: xCell enrichment scores and Spearman correlations (BH-adjusted)
 - Drug-gene links: DGIdb (hypotheses only)
 
+## Data
+All expression data are public in the NCBI Gene Expression Omnibus: GSE75214, GSE206171, GSE66407 and GSE20881. The scripts download or read them as described in `01_setup.R` to `03_select_samples.R` and `19_validation_load.R`, `21_extract_cel.R`, `30_cd_validation_load.R`.
+
 ## Usage
-Run the scripts in numerical order (01 to 53).
+Run the scripts in numerical order (01 to 54).
 - Scripts 45-50: robustness analyses (sensitivity of hub selection, resampling stability, alternative centrality measures), supplementary validation of PTGS2, and validation in colonic CD (GSE20881).
 - Scripts 44, 51, 52 and 53 assemble the figures. Run 44 before 52, because 52 overwrites Figure 7 and S1 with the final versions. Figure 1 (workflow) is drawn by `53_fig1_workflow.py` (Python, matplotlib).
+- `54_reference_lookup.R` checks reference metadata in Crossref and the PubMed links of the GEO series. It is not part of the analysis and is only needed to verify the reference list.
+- `33_specific_enrichment.R` produces the enrichment plots of UC-specific and CD-specific DEGs (Figure 8).
 
 ## Output
 - `results/`: summary tables (CSV), including the supplementary tables (sensitivity grid, centrality comparison, resampling stability, validation tables)
