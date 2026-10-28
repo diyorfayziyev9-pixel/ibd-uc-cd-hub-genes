@@ -25,4 +25,13 @@ Run the scripts in numerical order (01 to 55).
 
 ## Output
 - `results/`: summary tables (CSV). The supplementary tables of the article come from `sensitivity_grid.csv` (Table S1), `hub_methods_comparison.csv` (Table S2), `resampling_hub_stability.csv` (Table S3) and `validation_CD_colon_GSE20881*.csv` (Table S4)
-- `results/figures/`:
+- `results/figures/`: final figures (Figure 1-8 and Figure S1-S3)
+
+## Software
+R 4.6.1 with limma, clusterProfiler, igraph, pROC, GEOquery, xCell, ggplot2, patchwork and pheatmap; Python with matplotlib for Figure 1. See the Methods section of the article for versions.
+
+## Status
+This repository accompanies a manuscript in preparation. All results are based on public data and are hypotheses that need experimental confirmation.
+
+## License
+MIT
